@@ -12,9 +12,10 @@ public class Padre implements Cantante{
 		
 	}
 	
-	public Padre(int virtudes, int defectos) {
+	public Padre(int virtudes, int defectos, String nombre) {
 		this.virtudes = virtudes;
 		this.defectos = defectos;
+		this.nombre = nombre;
 	}
 	
 	//Getters and Setters
@@ -59,11 +60,14 @@ public class Padre implements Cantante{
 		
 	}
 
+	
+	
 	@Override
 	public String toString() {
-		return "Padre [virtudes=" + virtudes + ", defectos=" + defectos + ", totalAhorros=" + totalAhorros + "]";
+		return "Padre [virtudes=" + virtudes + ", defectos=" + defectos + ", totalAhorros=" + totalAhorros + ", nombre="
+				+ nombre + "]";
 	}
-	
+
 	//metodo total ahorros
 	public void ahorrar(double monto) {
 		totalAhorros += monto;

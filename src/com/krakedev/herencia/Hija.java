@@ -7,9 +7,9 @@ public class Hija extends Padre implements Cantante{
 	}
 	
 	//Constructor de hija
-	public Hija(int virtudes, int defectos, int munecas) {
+	public Hija(int virtudes, int defectos,String nombre, int munecas) {
 		//llamamos al contructor del padre sin usar this.virtudes
-		super(virtudes, defectos);
+		super(virtudes, defectos, nombre);
 		this.munecas = munecas;
 	}
 

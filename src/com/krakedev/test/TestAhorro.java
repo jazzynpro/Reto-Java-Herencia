@@ -8,9 +8,9 @@ public class TestAhorro {
 
 	public static void main(String[] args) {
 		//instanciar objetos
-		Padre padre = new Padre();
-		Hija hija = new Hija();
-		Hijo hijo = new Hijo(3,2,2);
+		Padre padre = new Padre(5,4,"Francisco");
+		Hija hija = new Hija(6,8,"Carla",2);
+		Hijo hijo = new Hijo(3,2,"Juan",2);
 		
 		padre.ahorrar(3.9);
 		hija.ahorrar(3.9);
